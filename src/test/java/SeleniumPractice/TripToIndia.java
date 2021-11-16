@@ -22,10 +22,14 @@ public class TripToIndia {
     }
 
     @Test
-    public void TC1() {
+    public void TC1() throws InterruptedException {
 
         driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
         driver.findElement(By.xpath("//input[@id='ctl00_mainContent_rbtnl_Trip_1']")).click();
+        driver.findElement(By.id("ctl00_mainContent_ddl_originStation1_CTXTaction")).click();
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//a[@value='DEL']")).click();
+
     }
 
 }
