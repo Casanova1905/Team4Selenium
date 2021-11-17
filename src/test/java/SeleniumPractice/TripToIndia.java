@@ -29,6 +29,9 @@ public class TripToIndia {
         driver.findElement(By.id("ctl00_mainContent_ddl_originStation1_CTXTaction")).click();
         Thread.sleep(1000);
         driver.findElement(By.xpath("//a[@value='DEL']")).click();
+        driver.findElement(By.xpath("(//a[@value='AMD'])[2]")).click();
+
+
 
     }
 
